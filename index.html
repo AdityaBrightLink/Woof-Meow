@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woof & Meow</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style2.css">
+
+    <link rel="icon" href="images/woof-logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- ****************NavBar****************** -->
+    <section class="navbar-section" id="navfirst">
+        <nav>
+
+            <ul class="sidebar">
+
+                <div class="inner-div-sidebar">
+
+                    <li><img src="images/woof-logo.png" alt="" id="navbar-logo-black"></li>
+
+
+                    <p onclick=hideSidebar()>
+                        <a ><i class="fa-solid fa-xmark" style="font-size: larger; color: black;"></i></a>
+                    </p>
+
+                </div>
+
+                <li><a href="#navfirst" onclick=hideSidebar()>Home</a></li>
+                <li><a href="#aboutUS-sec" onclick=hideSidebar()>About Us</a></li>
+                <li><a href="#ourServices" onclick=hideSidebar()>Our Services</a></li>
+                <li><a href="#whywandm" class="" onclick=hideSidebar()>Why WOOF & MEOW?</a></li>
+                <li class="contactusOnmobile"><a href="#contactus" class="bit-land-nav-contactus" onclick=hideSidebar()>Request
+                    Service</a>
+            </li>
+                <!-- <div class="navbar-social-media-icon">
+                        <img src="images/linkedin-1.png"  class="navbar-social-media-icon-img" alt="">
+                        <img src="images/facebook-1.png" class="navbar-social-media-icon-img" alt="">
+                        <img src="images/instagram-1.png" class="navbar-social-media-icon-img" alt="">
+                    </div> -->
+
+                <div class="navbar-copywright">
+                    <p>@2025 WOOF & MEOW. All rights reserved</p>
+                </div>
+            </ul>
+            <ul>
+                <li><img src="images/woof-logo.png" alt="" class="navbar-logo-img1"></li>
+                <li class="hideOnMobile"><a href="#navfirst">Home</a></li>
+                <li class="hideOnMobile"><a href="#aboutUS-sec">About Us</a></li>
+                <li class="hideOnMobile"><a href="#ourServices">Our Services</a></li>
+                <li class="hideOnMobile"><a href="#whywandm">Why WOOF & MEOW?</a></li>
+                <li class="hideOnMobile"><a href="#contactus" class="bit-land-nav-contactus">Request
+                        Service</a>
+                </li>
+                <li class="menu-button" onclick=toggleSidebar()><a href="#"><i class="fas fa-bars"
+                            id="sidebari1"></i></a></li>
+            </ul>
+
+
+        </nav>
+    </section>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const body = document.querySelector('body');
+            sidebar.classList.toggle('open');
+
+            if (sidebar.classList.contains('open')) {
+                body.style.overflowY = 'hidden'; // Disable vertical scrolling
+            } else {
+                body.style.overflowY = 'auto'; // Enable vertical scrolling
+            }
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const body = document.querySelector('body');
+            sidebar.classList.remove('open');
+            body.style.overflowY = 'auto'; // Enable vertical scrolling
+        }
+    </script>
+
+    <!-- *********Navbar Ended********* -->
+
+
+
+
+
+
+    <div class="woof-sec1-main">
+
+        <div class="row m-0 p-0 w-100">
+
+            <div class="col-lg-7">
+
+                <div class="woof-sec1-main-row-col1-div">
+                    <img src="images/woof-sec1-left-img1.png" alt="" class="woof-sec1-main-row-col1-div-img1">
+                </div>
+
+                <p class="woof-sec1-main-row-col1-p1">"Why settle for less? We provide the<span
+                        class="woof-sec1-main-row-col1-p1-span1"> Best</span> love, care & expert attention!"</p>
+
+                <p class="woof-sec1-main-row-col1-p2">"Expert Vet Care & Grooming –  <br> Keeping Your Pets Healthy,
+                    Happy & Loved!"</p>
+                <a href="#contactus" class="woof-sec1-main-a1">
+
+                    <img src="images/woof-sec1-left-img2.png" alt="" class="woof-sec1-main-a1-img1"><span
+                        class="woof-sec1-main-a1-span1">Request Services</span>
+                </a>
+            </div>
+
+            <div class="col-lg-5">
+
+                <!-- <img src="images/woof-home-sec1-right-img.png" alt="" class="woof-sec1-main-row-cil2-img"> -->
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <!-- <div class="custom-shape-divider-bottom-1743488114">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
+    </div> -->
+
+
+
+    <div class="woof-sec2-main" id="aboutUS-sec">
+
+        <p class="woof-sec2-main-p1">About <span class="woof-sec2-main-p1-span">US</span></p>
+        <P class="woof-sec2-main-p2"> At <span class="woof-sec2-main-p1-spn">Woof & Meow</span> , we provide top-quality
+            care for your pets. Our skilled vets and groomers ensure your furry
+            friends receive the love, attention, and expertise they deserve for a happy, healthy life.</P>
+
+
+        <p class="woof-sec2-main-p1">Our <span class="woof-sec2-main-p1-span"> Founders </span></p>
+
+        <div class="woof-sec2-main-fnd-1-div woof-dflex">
+            <img src="images/woof-sec2-fnd-img1.png" alt="" class="woof-sec2-main-fnd-1-div-img1">
+        </div>
+
+        <p class="woof-sec2-main-fnd-title" data-aos="fade-up"
+        data-aos-duration="1500">Dr. Prajakta Chetan Pawar</p>
+        <p class="woof-sec2-main-fnd-title-1" data-aos="fade-up"
+        data-aos-duration="1500">Founder & Veterinary Gynaecologist & Surgeon</p>
+
+
+
+        <P class="woof-sec2-main-p2">With a passion for
+            animals and a deep commitment to their health and well-being, Dr. Prajakta founded <span
+                class="woof-sec2-main-p1-spn">Woof & Meow</span> Pet Clinic to
+            provide compassionate and expert care for pets.</P>
+
+
+
+        <div class="woof-sec2-main-fnd-1-div woof-dflex">
+            <img src="images/woof-sec2-fnd2-img.png" alt="" class="woof-sec2-main-fnd-1-div-img1">
+        </div>
+
+        <p class="woof-sec2-main-fnd-title" data-aos="fade-up"
+        data-aos-duration="1500">Mr. Pranav Jalinder Tumbare</p>
+        <p class="woof-sec2-main-fnd-title-1" data-aos="fade-up"
+        data-aos-duration="1500">Co-Founder </p>
+
+
+
+        <P class="woof-sec2-main-p2">Pranav co-founded <span class="woof-sec2-main-p1-spn">Woof & Meow</span> with a
+            vision to create a trusted space for pet care and grooming. His dedication ensures every aspect of our
+            clinic runs smoothly, creating a comfortable experience for both pets and their owners.</P>
+    </div>
+
+
+
+
+
+
+    <!-- section- 3- start -->
+<div class="woof_section-3" id="ourServices">
+
+    <p class="woof_section-3-heading-1">Our&nbsp;<span style="color: #9D4FC7;
+">Services</span> </p> 
+
+    <p class="woof_section-3-heading-2">Veterinary Care</p>
+
+    <div class="row m-0 pl-0 pr-0 pt-0  w-100 woof_section-3-main-row-1">
+
+     <div class="col-md-4  woof_section-3-row-1-col-1"  data-aos="zoom-in"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+       <div class=" woof_section-3-img-div">
+        <div class="woof-section-3-img-1">
+            <img src="./images/section-3-img-1.png" alt="">
+        </div>
+        <p class="woof_section-3-row-1-col-1-heading" data-aos="fade-up"
+        data-aos-duration="1500">General Check-ups & Vaccinations</p>
+        <p class="woof_section-3-row-1-col-1-paragraph" data-aos="fade-up"
+        data-aos-duration="1500"> Comprehensive health exams and essential vaccines to prevent diseases, ensuring your pet stays happy, active, and protected.</p>
+       </div>
+     </div>
+
+     <div class="col-md-4 woof_section-3-row-1-col-2"  data-aos="zoom-in"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <div class=" woof_section-3-img-div">
+           <div class="woof-section-3-img-2">
+            <img src="./images/section-3-img-2.png" alt="" >
+           </div>
+            <p class="woof_section-3-row-1-col-2-heading" data-aos="fade-up"
+            data-aos-duration="1500">Diagnostics & Lab Tests</p>
+            <p class="woof_section-3-row-1-col-2-paragraph" data-aos="fade-up"
+            data-aos-duration="1500"> Blood tests for health, urine tests for infections, dermatological tests for skin issues, and vaginal cytology for reproduction.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 woof_section-3-row-1-col-3"  data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
+        <div class=" woof_section-3-img-div">
+           <div class="woof-section-3-img-3">
+            <img src="./images/section-3-img-3.png" alt="" >
+           </div>
+            <p class="woof_section-3-row-1-col-3-heading" data-aos="fade-up"
+            data-aos-duration="1500">Surgery & Emergency Care </p>
+            <p class="woof_section-3-row-1-col-3-paragraph" data-aos="fade-up"
+            data-aos-duration="1500">Safe, expert surgical procedures and urgent medical care to handle critical pet health needs with precision and compassion.</p>
+        </div>
+      </div>
+
+    </div>
+
+   <div class="row m-0 p-0 w-100 woof_section-3-main-row-2">
+
+    <div class="col-md-4  woof_section-3-row-2-col-1"  data-aos="zoom-in"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+        <div class=" woof_section-3-img-div">
+            <div class="woof-section-3-img-4">
+                <img src="./images/section-3-img-4.png" alt="" >
+               </div>
+         <p class="woof_section-3-row-2-col-1-heading" data-aos="fade-up"
+         data-aos-duration="1500">Dental Care</p>
+         <p class="woof_section-3-row-2-col-1-paragraph" data-aos="fade-up"
+         data-aos-duration="1500"> Professional cleanings and treatments to prevent dental diseases, ensuring your pet’s teeth and gums stay healthy.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4  woof_section-3-row-2-col-2"  data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
+        <div class=" woof_section-3-img-div">
+            <div class="woof-section-3-img-4">
+                <img src="./images/section-3-img-5.png" alt="" >
+               </div>
+         <p class="woof_section-3-row-2-col-2-heading" data-aos="fade-up"
+         data-aos-duration="1500">Parasite Control</p>
+         <p class="woof_section-3-row-2-col-2-paragraph" data-aos="fade-up"
+         data-aos-duration="1500">Protection against fleas, ticks, and worms to keep your pet healthy, itch-free, and safe from infections.</p>
+        </div>
+      </div>
+   </div>
+
+</div>
+<!-- section -3 -End -->
+
+
+
+<!-- section-4 start -->
+
+<div class="woof_section-4">
+  <div class="row m-0 p-0 pt-5 pb-5 w-100 woof_section-4-main-row " >
+
+    <div class="col-md-2" data-aos="zoom-in"
+    data-aos-easing="linear"
+    data-aos-duration="2000">
+      <div class="woof_section-4-col-1-img-1">
+      <div class="section-4-img">
+        <img src="/images/Vector (3).png" alt="">
+      </div>
+      <p class="section-4-heading">Grooming</p>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+        <div class="woof_section-4-col-2-img-2" data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="2000">
+         <div class="section-4-img">
+            <img src="/images/Group.png" alt="">
+         </div>
+         <p class="section-4-heading">Healthcare</p>
+        </div>
+      </div>
+
+      <div class="col-md-2" data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="2000">
+        <div class="woof_section-4-col-3-img-3">
+          <div class="section-4-img">
+            <img src="images/Group (1).png" alt="">
+          </div>
+          <p class="section-4-heading">Daycare</p>
+        </div>
+      </div>
+
+   
+
+      <div class="col-md-2" data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="2000">
+        <div class="woof_section-4-col-5-img-5">
+        <div class="section-4-img">
+            <img src="/images/Group 1261157332.png" alt="">
+        </div>
+        <p class="section-4-heading">Hyginic care</p>
+        </div>
+      </div>
+
+
+
+  </div>
+</div>
+
+
+ <!-- section-4 End -->
+
+
+ <!-- section-5-start -->
+
+ <div class="woof-section-5">
+  <p class="woof-section-5-main-heading">Additionally, We Provide <span style="color:#9D4FC7;;">Home <br> Services</span> </p>
+ </div>
+ 
+
+ <div class="row m-0 p-0 w-100 section-5-main-row">
+ 
+    <div class="col-lg-2 col-md-4" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="3000">
+      <div class="woof-section-5-img">
+       <div> <img src="/images/sec-5-img-1.png" alt=""></div>
+      </div>
+      <p class="woof-section-5-img-heading"> Bathing & Shampooing</p>
+
+      <p class="woof-section-5-img-paragraph">Gentle, pet-safe products for a clean, shiny coat.</p>
+    </div>
+
+    <div class="col-lg-2 col-md-4" data-aos="fade-up"
+    data-aos-easing="linear"
+    data-aos-duration="3000">
+        <div>
+          <div  class="woof-section-5-img">
+            <img src="/images/sec-5-img-2.png" alt="">
+        </div>
+        </div>
+        <p class="woof-section-5-img-heading"> Haircuts & Styling</p>
+        <p class="woof-section-5-img-paragraph "> Customized trims for a neat and stylish look.</p>
+      </div>
+
+      <div class="col-lg-2 col-md-4" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="3000">
+        <div >
+          <div  class="woof-section-5-img">
+            <img src="/images/sec-5-img-3.png" alt="">
+        </div>
+        </div>
+        <p class="woof-section-5-img-heading"> Nail Trimming & Paw Care</p>
+        <p class="woof-section-5-img-paragraph "> Healthy paws with careful clipping.</p>
+      </div>
+
+      <div class=" col-lg-2 col-md-4" data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="3000">
+        <div >
+          <div  class="woof-section-5-img">
+            <img src="/images/sec-5-img-4.png" alt="">
+        </div>
+        </div>
+        <p class="woof-section-5-img-heading"> Ear Cleaning &
+            De-shedding</p>
+            <p class="woof-section-5-img-paragraph ">Reducing fur mess and preventing infections.</p>
+      </div>
+
+      <div class="col-lg-2 col-md-4" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="3000">
+        <div>
+          <div class="woof-section-5-img">
+            <img src="/images/sec-5-img-5.png" alt="">
+        </div>
+        </div>
+        <p class="woof-section-5-img-heading">Medicated Baths</p>
+        <p class="woof-section-5-img-paragraph">Special treatments for sensitive skin and allergies.</p>
+      </div>
+
+ </div>
+
+ <!-- section-5-End -->
+
+
+
+
+
+
+
+    <div class="woof-sec6-main" id="whywandm">
+
+        <p class="woof-sec6-main-p1">Why <span class="woof-sec6-main-p1-span">WOOF & MEOE ?</span></p>
+
+        <div class="row m-0 p-0 w-100">
+            <div class="col-md-6 woof-sec6-main-row-col1 woof-dflex">
+                <p class="woof-sec6-main-row-col1-p1"><span class="woof-sec6-main-row-col1-p1-span"> Woof & Meow</span>
+                    Pet Clinic and Grooming Centre offers expert veterinary care, grooming and pet services
+                    all in one place. From check-ups and surgeries to haircuts and nail trims, we ensure your pet
+                    receives top-notch care in a comfortable, pet-friendly environment. We also provide pet food,
+                    accessories, and home services for added convenience.</p>
+            </div>
+            <div class="col-md-6 ">
+                <div class="woof-sec6-main-row-col2-div">
+                    <img src="images/woof-sec6-main-right-img.png" alt="" class="woof-sec6-main-row-col2-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="woof-sec7-main">
+
+        <p class="woof-sec6-main-p1">Premium Pet <span class="woof-sec6-main-row-col1-p1-span">Food </span></p>
+
+
+        <div class="row w-100 m-0 p-0 ">
+            <div class="col-md-4 woof-sec7-main-row-col1" data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <div class="woof-se7-main-row-col-img-div woof-dflex">
+                    <img src="/images/woof-sec7-img1.png" alt="" class="woof-sec7-main-row-col1-img">
+                </div>
+                <p class="woof-sec7-main-row-col1-p1" data-aos="fade-up"
+                data-aos-duration="1500">Dry & Wet Food</p>
+                <p class="woof-sec7-main-row-col1-p2" data-aos="fade-up"
+                data-aos-duration="1500"> Catering to both dogs and cats with balanced nutrition for all
+                    ages and breeds.</p>
+
+            </div>
+
+            <div class="col-md-4 woof-sec7-main-row-col1" data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <div class="woof-sec7-main-row-col-img-div woof-dflex">
+                    <img src="/images/woof-sec7-img2.png" alt="" class="woof-sec7-main-row-col1-img">
+                </div>
+                <p class="woof-sec7-main-row-col1-p1" data-aos="fade-up"
+                data-aos-duration="1500">Specialized Diets</p>
+                <p class="woof-sec7-main-row-col1-p2" data-aos="fade-up"
+                data-aos-duration="1500">Options for pets with specific dietary needs, including
+                    hypoallergenic, grain-free, and senior diets.</p>
+
+            </div>
+
+            <div class="col-md-4 woof-sec7-main-row-col1" data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <div class="woof-sec7-main-row-col-img-div woof-dflex">
+                    <img src="/images/woof-sec7-img3.png" alt="" class="woof-sec7-main-row-col1-img">
+                </div>
+                <p class="woof-sec7-main-row-col1-p1" data-aos="fade-up"
+                data-aos-duration="1500">Treats</p>
+                <p class="woof-sec7-main-row-col1-p2" data-aos="fade-up"
+                data-aos-duration="1500">Healthy and tasty treats to reward your pet, including dental
+                    chews and training treats.</p>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="woof-sec8-main">
+        <p class="woof-sec8-main-p1">Enhance your pet’s comfort and style with our <span
+                class="woof-sec6-main-row-col1-p1-span">Premium Accessories</span></p>
+
+        <div class="row w-100 m-0 p-0">
+
+            <div class="col-md-3" data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <div class="woof-sec8-main-row-col-img-div woof-dflex">
+                    <img src="/images/woof-sec8-img1.png" alt="" class="woof-sec8-main-row-col1-img">
+                </div>
+                <p class="woof-sec8-main-row-col1-p1" data-aos="fade-up"
+                data-aos-duration="1500">Specialized Diets</p>
+                <p class="woof-sec8-main-row-col1-p2" data-aos="fade-up"
+                data-aos-duration="1500"> Stylish, durable, and secure.</p>
+            </div>
+
+            <div class="col-md-3" data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <div class="woof-sec8-main-row-col-img-div woof-dflex">
+                    <img src="/images/woof-sec8-img2.png" alt="" class="woof-sec8-main-row-col1-img">
+                </div>
+                <p class="woof-sec8-main-row-col1-p1" data-aos="fade-up"
+                data-aos-duration="1500"> Beds & Carriers</p>
+                <p class="woof-sec8-main-row-col1-p2" data-aos="fade-up"
+                data-aos-duration="1500">Cozy resting spaces and travel-friendly carriers.</p>
+            </div>
+
+            <div class="col-md-3" data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <div class="woof-sec8-main-row-col-img-div woof-dflex">
+                    <img src="/images/woof-sec8-img3.png" alt="" class="woof-sec8-main-row-col1-img">
+                </div>
+                <p class="woof-sec8-main-row-col1-p1" data-aos="fade-up"
+                data-aos-duration="1500"> Toys & Treats</p>
+                <p class="woof-sec8-main-row-col1-p2" data-aos="fade-up"
+                data-aos-duration="1500"> Engaging toys and delicious rewards.</p>
+            </div>
+
+            <div class="col-md-3" data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <div class="woof-sec8-main-row-col-img-div woof-dflex">
+                    <img src="/images/woof-sec8-img4.png" alt="" class="woof-sec8-main-row-col1-img">
+                </div>
+                <p class="woof-sec8-main-row-col1-p1" data-aos="fade-up"
+                data-aos-duration="1500">Grooming Essentials</p>
+                <p class="woof-sec8-main-row-col1-p2" data-aos="fade-up"
+                data-aos-duration="1500"> Brushes, nail clippers, and hygiene products.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="woof-sec9-main" id="contactus">
+        <p class="woof-sec9-main-p1">Contact <span class="woof-sec6-main-row-col1-p1-span">Us</span></p>
+        <p class="woof-sec9-main-p2">Fill out the form below , and we will contact you soon!</p>
+
+
+
+         <!-- Section-9-start -->
+
+ <div class="section-9-main-div">
+    <div class="row mt-5  w-100 woof-section-9-main-row">
+  
+      <div class="col-md-4 woof-section-9-main-row-col-1">
+        <div class="woof-section-9-main-row-col-1-main-div">
+         <p class="woof-section-9-main-row-col-1-main-div-main-heading pt-5 " style="text-align: center;">Contact Information</p>
+   
+         <p class="woof-section-9-main-row-col-1-main-div-paraghaph" style="text-align: center;">Say something to start a chat!</p>
+   
+         <p class="woof-section-9-main-row-col-1-main-div-WOOF-MEOW mb-5" style="text-align: center;">WOOF & MEOW</p>
+   
+         
+        <div class="woof-section-9-main-row-col-1-phone-main-div">
+         <div class="section-9-phone-img">
+           <img src="images/bxs_phone-call.png" >
+         </div>
+         <p class="woof-section-9-phone-no" > +91-9595717653</p>
+        </div>
+   
+        
+       <div class="woof-section-9-main-row-col-1-email-main-div">
+         <div class="section-9-email-img">
+           <img src="images/ic_sharp-email.png" >
+         </div>
+         <p class="woof-section-9-email" >  woofandmeowpetclinic@gmail.com</p>
+       </div>
+   
+       <div class="woof-section-9-main-row-col-1-address-main-div">
+         <div class="section-9-address-img">
+           <img src="images/section-9-location.png" >
+         </div>
+         <p class="woof-section-9-address" > <a style="font-weight: 700; font-size: 1.2rem;">Dr. Prajakta Chetan Pawar</a> <br>Shop no 19, Royal Arcade, besides <br> Shankar Maharaj Math, Dhankawadi,<br> Pune 411043</p>
+       </div>
+   
+        </div>
+      </div>
+   
+      <form class="col-md-8 woof-section-9-main-row-col-2-row-1" method="POST" action="sendMail.php">
+       <div class="row m-0 pt-5 w-100 woof-section-9-main-row-col-2-name-input-row">
+           <div class="col-md-6">
+               <label class="name-lable">First Name</label> <br>
+               <input type="text" class="name-input" name="first_name" required>
+           </div>
+           <div class="col-md-6">
+               <label class="last-name-lable">Last Name</label> <br>
+               <input type="text" class="last-name-input" name="last_name" required>
+           </div>
+       </div>
+   
+       <div class="row m-0 pt-3 w-100 woof-section-9-main-row-col-2-row-2">
+           <div class="col-md-6">
+               <label class="email-lable">Email</label> <br>
+               <input type="email" class="email-input" name="email" required>
+           </div>
+           <div class="col-md-6">
+               <label class="phone-no-lable">Phone No</label> <br>
+               <input type="text" class="phone-input" name="phone" required>
+           </div>
+       </div>
+   
+       <p class="woof-section-9-type-of-service">Types Of Services</p>
+   
+       <div class="woof-section-9-radio-button" style="display: flex; justify-content: space-evenly;">
+           <div class="buttons-radio">
+               <input type="radio" name="service" value="Grooming" required>
+               <label>Grooming</label>
+           </div>
+           <div class="buttons-radio">
+               <input type="radio" name="service" value="Daycare">
+               <label>Daycare</label>
+           </div>
+           <div class="buttons-radio">
+               <input type="radio" name="service" value="Dental">
+               <label>Dental</label>
+           </div>
+           <div class="buttons-radio">
+               <input type="radio" name="service" value="Other">
+               <label>Other</label>
+           </div>
+       </div>
+   
+       <div>
+           <label class="message-lable"> Message</label> <br>
+           <textarea class="message-input" name="message" placeholder="Enter your message......." required></textarea>
+       </div>
+   
+       <div class="button-main-div">
+           <button type="submit" class="woof-section-9-form-button">Send Message</button>
+       </div>
+   </form>
+   
+      
+    </div>
+   
+   </div>
+   <!-- Section-9-end -->
+  
+    </div>
+
+
+
+    <div class="woof-sec10-main">
+
+        <div class="woof-sec10-main-row">
+            <div class="woof-sec10-main-row-col1">
+                <img src="images/woof-sec10-img1.png" alt="">
+            </div>
+            <div class="woof-sec10-main-row-col2">
+                <img src="images/woof-sec10-img2.png" alt="">
+            </div>
+        </div>
+
+
+        <p class="woof-sec10-main-p1">"Listen to What Our <span class="woof-sec10-main-p1-span">Pet Parents</span> Have
+            to Say"</p>
+    </div>
+
+    <div class="woof-sec11-main">
+        <div class="woof-sec11-slider">
+            <div class="woof-sec11-track">
+                <div class="col-md-4 woof-sec11-track-col">
+                    <div class="woof-sec11-main-row-col-imgDiv woof-dflex woof-sec11-crd1-div1-bg">
+                        <img src="images/woof-sec11-card1-img1.png" alt="" class="woof-sec11-main-row-col-img">
+                    </div>
+                    <div class="woof-sec11-main-row-col-div2">
+                        <p class="woof-sec11-main-row-col-div2-p1">Sanya R.</p>
+                        <p class="woof-sec11-main-row-col-div2-p2">"Amazing care! My dog loves the grooming sessions,
+                            and
+                            the staff is fantastic!"</p>
+
+                        <div class="woof-sec11-main-row-row1">
+
+                            <div class="row m-0 p-0 w-100 woof-sec11-main-row-row1-row">
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgTwo.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="m-0 woof-sec11-main-row-row1-p1">4.2/5</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4 woof-sec11-main-row-col-top-padding woof-sec11-track-col">
+                    <div class="woof-sec11-main-row-col-imgDiv woof-dflex woof-sec11-crd2-div1-bg">
+                        <img src="images/woof-sec11-card2-img1.png" alt="" class="woof-sec11-main-row-col-img">
+                    </div>
+                    <div class="woof-sec11-main-row-col-div2">
+                        <p class="woof-sec11-main-row-col-div2-p1">Rahul P.</p>
+                        <p class="woof-sec11-main-row-col-div2-p2">"Great check-ups for my cat! The vets are thorough,
+                            and
+                            the team is incredibly caring."</p>
+
+                        <div class="woof-sec11-main-row-row1">
+
+                            <div class="row m-0 p-0 w-100 woof-sec11-main-row-row1-row">
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="m-0 woof-sec11-main-row-row1-p1">5/5</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4 woof-sec11-track-col">
+                    <div class="woof-sec11-main-row-col-imgDiv woof-dflex woof-sec11-crd3-div1-bg">
+                        <img src="images/woof-sec11-card3-img.png" alt="" class="woof-sec11-main-row-col-img">
+                    </div>
+                    <div class="woof-sec11-main-row-col-div2">
+                        <p class="woof-sec11-main-row-col-div2-p1"> Anjali T.</p>
+                        <p class="woof-sec11-main-row-col-div2-p2">"Quick and caring service for my puppy’s dental
+                            treatment. Highly recommend!"</p>
+
+                        <div class="woof-sec11-main-row-row1">
+
+                            <div class="row m-0 p-0 w-100 woof-sec11-main-row-row1-row">
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="m-0 woof-sec11-main-row-row1-p1">5/5</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="col-md-4 woof-sec11-main-row-col-top-padding woof-sec11-track-col">
+                    <div class="woof-sec11-main-row-col-imgDiv woof-dflex woof-sec11-crd2-div1-bg">
+                        <img src="images/woof-sec11-crd4-img1.png" alt="" class="woof-sec11-main-row-col-img">
+                    </div>
+                    <div class="woof-sec11-main-row-col-div2">
+                        <p class="woof-sec11-main-row-col-div2-p1"> Karan M.</p>
+                        <p class="woof-sec11-main-row-col-div2-p2">"Great grooming! My dog looks perfect every time, and
+                            the
+                            experience is always stress-free."</p>
+
+                        <div class="woof-sec11-main-row-row1 woof-sec11-main-row-row1-row">
+
+                            <div class="row m-0 p-0 w-100">
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="m-0 woof-sec11-main-row-row1-p1">4.2/5</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4 woof-sec11-track-col">
+                    <div class="woof-sec11-main-row-col-imgDiv woof-dflex woof-sec11-crd3-div1-bg">
+                        <img src="images/woof-sec11-crd5-img1.png" alt="" class="woof-sec11-main-row-col-img">
+                    </div>
+                    <div class="woof-sec11-main-row-col-div2">
+                        <p class="woof-sec11-main-row-col-div2-p1">Simran D.</p>
+                        <p class="woof-sec11-main-row-col-div2-p2">"As a first-time pet owner, I felt so comfortable
+                            with
+                            the team at Woof & Meow."</p>
+
+                        <div class="woof-sec11-main-row-row1 woof-sec11-main-row-row1-row">
+
+                            <div class="row m-0 p-0 w-100">
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="m-0 woof-sec11-main-row-row1-p1">5/5</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4 woof-sec11-main-row-col-top-padding woof-sec11-track-col">
+                    <div class="woof-sec11-main-row-col-imgDiv woof-dflex woof-sec11-crd1-div1-bg">
+                        <img src="images/woof-sec11-crd6-img1.png" alt="" class="woof-sec11-main-row-col-img">
+                    </div>
+                    <div class="woof-sec11-main-row-col-div2">
+                        <p class="woof-sec11-main-row-col-div2-p1"> Vikram S.</p>
+                        <p class="woof-sec11-main-row-col-div2-p2">"A one-stop-shop for all my pet's needs. Trustworthy,
+                            caring, and knowledgeable!"</p>
+
+                        <div class="woof-sec11-main-row-row1">
+
+                            <div class="row m-0 p-0 w-100 woof-sec11-main-row-row1-row">
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgOne.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="images/woof-sec11-bone-imgTwo.png" alt="" class="">
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="m-0 woof-sec11-main-row-row1-p1">4/5</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="woof-sec12-main">
+        <p class="woof-sec12-main-p1">See Our <span class="woof-sec12-main-p1-span"> Happy</span> Moments</p>
+
+        <div class="woof-sec12-main-row1">
+            <div class="row w-100 m-0 p-0">
+                <div class="col-lg-4 col-md-6 mt-5 woof-dflex" data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="2000">
+                    <img src="/images/woof-sec12-img1.png" alt="" class="woof-sec12-main-row1-col-img">
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-5 woof-dflex" data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="2000">
+                    <img src="/images/woof-sec12-img2.png" alt="" class="woof-sec12-main-row1-col-img">
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-5 woof-dflex" data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="2000">
+                    <img src="/images/woof-sec12-img3.png" alt="" class="woof-sec12-main-row1-col-img">
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-5 woof-dflex" data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="2000">
+                    <img src="/images/woof-sec12-img4.png" alt="" class="woof-sec12-main-row1-col-img">
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-5 woof-dflex" data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="2000">
+                    <img src="/images/woof-sec12-img5.png" alt="" class="woof-sec12-main-row1-col-img">
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-5 woof-dflex" data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="2000">
+                    <img src="/images/woof-sec12-img6.png" alt="" class="woof-sec12-main-row1-col-img">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="woof-footer">
+
+        <div class="woof-footer-div1">
+            <img src="/images/woof-footer-banner1.png" alt="" class="woof-footer-div1-img">
+
+            <div class="woof-footer-div1-sub1">
+                <div class="woof-footer-div1-sub1-div woof-dflex">
+                    <img src="images/woof-footer-banner-img1.png" alt="" class="woof-footer-div1-sub1-div-img">
+                </div>
+
+                <div class="woof-footer-div1-sub1-div1">
+                    <p class="woof-footer-div1-sub1-div1-p1">"Looking to experience our services?"</p>
+
+                    <div class="woof-dflex">
+
+                        <a href="" class="woof-footer-div1-sub1-div1-a1">Request Services</a>
+                    </div>
+
+                </div>
+
+                <div class="woof-footer-div1-sub1-div2 woof-dflex">
+                    <a href="" class="woof-dflex"> <img src="images/woof-footer-banner-Img2.png" alt=""
+                            class="woof-footer-div1-sub1-div2-img"></a>
+                </div>
+            </div>
+
+            <div class="woof-footer-div1-sub2">
+                <div class="row m-0 p-0 w-100 justify-content-center">
+                    <div class="col-lg-2 col-md-12 woof-footer-div1-sub2-row-col1">
+                        <img src="images/woof-footer-logo.png" alt="" class="woof-footer-div1-sub2-row-col1-img">
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <p class="woof-footer-div1-sub2-row-col2-p1">WOOF & MEDE</p>
+                        <p class="woof-footer-div1-sub2-row-col2-p2">Give your pet the care they deserve! Schedule a vet
+                            consultation or grooming session today.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <p class="woof-footer-div1-sub2-row-col3-p1">Location</p>
+                        <p class="woof-footer-div1-sub2-row-col3-p2">Shop no 19, Royal Arcade, besides Shankar Maharaj
+                            Math, Dhankawadi, Pune 4111043</p>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <p class="woof-footer-div1-sub2-row-col4-p1 woof-footer-div1-sub2-row-col4-p1-inline" style="">
+                            Contact</p>
+                        <p class="woof-footer-div1-sub2-row-col4-p2">Got a question? Call us</p>
+
+                        <p class="woof-footer-div1-sub2-row-col4-p3"><img src="images/woof-phone-icon.png" alt=""
+                                class="woof-footer-div1-sub2-row-col4-p4-img">9595717653</p>
+                        <p class="woof-footer-div1-sub2-row-col4-p4"><img src="images/woof-mail-icon.png" alt=""
+                                class="woof-footer-div1-sub2-row-col4-p4-img">woofandmeowpetclinic@gmail.com
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="woof-footer-row1-main">
+                <div class="woof-footer-row1">
+
+                    <div class="">
+                        <img src="images/woof-footer-heart-grp.png" alt="" class="woof-footer-div1-sub4-img1">
+                    </div>
+                    <div class="">
+                        <p class="woof-footer-div1-sub4-p1">Woof & Meow – Make your furry friends happier inside and out
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+        <script>
+            AOS.init();
+          </script>
+</body>
+
+</html>
